@@ -20,7 +20,7 @@ const handleIncoming = (topic, message) => {
 };
 
 const handleConnect = () => {
-  client.subscribe("presence", handleSubscribe);
+  client.subscribe("go-mqtt/sample", handleSubscribe);
 };
 
 client.on("connect", handleConnect);

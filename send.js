@@ -6,7 +6,7 @@ const client = mqtt.connect(ECLIPSE);
 
 const handleSubscribe = (err) => {
   if (!err) {
-    client.publish("presence", "Hello from montreal");
+    client.publish("go-mqtt/sample", "Hello from montreal");
     client.end();
   }
 };
